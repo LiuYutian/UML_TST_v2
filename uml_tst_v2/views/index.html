@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UML TST</title>
+    <link rel="stylesheet" href="./static/stylesheets/bootstrap.css">
+    <link rel="stylesheet" href="./static/stylesheets/index.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h4>西安软件服务外包大学</h4>
+            <hr>
+            <div class="text-center"><h1>统一建模语言理论测试</h1></div>
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">考试科目：
+                            <input class="info" type="text" readonly value="统一建模语言 UML">
+                        </div>
+                        <div class="col-md-4 text-center">时间：
+                            <input class="info"  type="text" readonly value="100分钟">
+                        </div>
+                        <div class="col-md-4 text-center">得分：
+                            <input class="info" type="text" readonly value=" ">
+                        </div>
+                    </div>
+                    <div class="row titleMargin">
+                        <div class="col-md-4 text-center">班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：
+                            <input class="info" type="text" placeholder="请输入班级">
+                        </div>
+                        <div class="col-md-4 text-center">学号：
+                            <input class="info" type="text"  placeholder="请输入学号">
+                        </div>
+                        <div class="col-md-4 text-center">姓名：
+                            <input class="info" id="name" type="text" placeholder="请输入姓名">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">一、填空题</h3>
+                </div>
+                <div class="panel-body">
+                    <span>1、UML&nbsp;的中文全称是：</span>
+                    <input class="info" type="text">。<br>
+                    <span>2、对象最突出的特征是：</span>
+                    <input class="info titleMargin" type="text">&nbsp;、
+                    <input class="info" type="text">&nbsp;、
+                    <input class="info" type="text">。
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">二、选择题</h3>
+                </div>
+                <div class="panel-body">
+                    <div>1、UML与软件工程的关系是：【<span id="single-no1"></span>】</div>
+                    <input id="single-no1-a"  type="radio" name="single-no1" value="A">
+                    <label for="single-no1-a">(A) UML就是软件工程</label><br>
+                    <input id="single-no1-b"  type="radio" name="single-no1" value="B">
+                    <label for="single-no1-b">(B) UML参与软件工程中软件开发过程的几个阶段</label><br>
+                    <input id="single-no1-c"  type="radio" name="single-no1" value="C">
+                    <label for="single-no1-c">(C) UML与软件工程无关</label><br>
+                    <input id="single-no1-d"  type="radio" name="single-no1" value="D">
+                    <label for="single-no1-d">(D) UML是软件工程的一部分</label>
+                    <div>2、Java软件支持：【<span id="single-no2"></span>】</div>
+                    <input id="single-no2-a"  type="radio" name="single-no2" value="A">
+                    <label for="single-no2-a">(A) 单继承</label><br>
+                    <input id="single-no2-b"  type="radio" name="single-no2" value="B">
+                    <label for="single-no2-b">(B) 多继承</label><br>
+                    <input id="single-no2-c"  type="radio" name="single-no2" value="C">
+                    <label for="single-no2-c">(C) 单继承和多继承都支持</label><br>
+                    <input id="single-no2-d"  type="radio" name="single-no2" value="D">
+                    <label for="single-no2-d">(D) 单继承和多继承都不支持</label><br>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">三、多选题</h3>
+                </div>
+                <div class="panel-body">
+                    <div >1、用例的粒度分别为以下哪三种。【<span id="multiple-no1"></span>】</div>
+                    <input id="multiple-no1-a"  type="checkbox" name="multiple-no1" value="A">
+                    <label for="multiple-no1-a">(A) 概念级</label><br>
+                    <input id="multiple-no1-b"  type="checkbox" name="multiple-no1" value="B">
+                    <label for="multiple-no1-b">(B) 需求级</label><br>
+                    <input id="multiple-no1-c"  type="checkbox" name="multiple-no1" value="C">
+                    <label for="multiple-no1-c">(C) 用户目标级</label><br>
+                    <input id="multiple-no1-d"  type="checkbox" name="multiple-no1" value="D">
+                    <label for="multiple-no1-d">(D) 子功能级</label>
+                    <div>2、类图由以下哪三部分组成。【<span id="multiple-no2"></span>】</div>
+                    <input id="multiple-no2-a"  type="checkbox" name="multiple-no2" value="A">
+                    <label for="multiple-no2-a">(A) 名称(Name)</label><br>
+                    <input id="multiple-no2-b"  type="checkbox" name="multiple-no2" value="B">
+                    <label for="multiple-no2-b">(B) 属性(Attrbute)</label><br>
+                    <input id="multiple-no2-c"  type="checkbox" name="multiple-no2" value="C">
+                    <label for="multiple-no2-c">(C) 操作(Operation)</label><br>
+                    <input id="multiple-no2-d"  type="checkbox" name="multiple-no2" value="D">
+                    <label for="multiple-no2-d">(D) 方法(Function)</label><br>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">四、判断题</h3>
+                </div>
+                <div class="panel-body">
+                    <span >1、用例图只是用于和客户交流和沟通的，用于确定需求。</span>
+                    <span>【<input type="radio" name="judge1" value="√" id="judge1v">
+                        <label for="judge1v">&nbsp; √ &nbsp;</label>
+                        <input type="radio" name="judge1" value="×" id="judge1x">
+                        <label for="judge1x">&nbsp; × &nbsp;</label>】
+                    </span><br>
+                    <span >2、在状态图中，终止状态在一个状态图中允许有任意多个。</span>
+                    <span>【<input type="radio" name="judge2" value="√" id="judge2v">
+                        <label for="judge2v">&nbsp; √ &nbsp;</label>
+                        <input type="radio" name="judge2" value="×" id="judge2x">
+                        <label for="judge2x">&nbsp; × &nbsp;</label>】
+                    </span><br>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title">五、简答题 （每题 4 分， 共20分）</h3>
+                </div>
+                <div class="panel-body">
+                    <span >1、简述什么是模型以及模型的表现形式？</span><br>
+                    <span ><textarea name="shortAanswer" cols="40" rows="5" id="shortAanswer"></textarea></span><br>
+                    <span class="col-md-6 text-center top"><input type="button" value="提交"></span>
+                    <span class="col-md-6 text-center top"><input type="reset" value="重置"></span>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

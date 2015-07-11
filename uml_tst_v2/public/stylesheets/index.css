@@ -1,0 +1,30 @@
+hr {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+h4 {
+    color: #A9A9A9;
+}
+
+.panel-default {
+    border-color: #DAEDF7;
+    border-width: 2px;
+}
+
+.info {
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    text-align: center;
+    width: 200px;
+    font-size:20px;
+}
+
+.titleMargin{
+    margin-top:5px;
+}
+
+#shortAanswer {
+    resize:none;
+}
