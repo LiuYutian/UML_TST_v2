@@ -2,6 +2,8 @@ var express = require('express');
 var ejs = require("ejs");
 var app = express();
 var bodyParser = require("body-parser");
+var QuestionsBank = require("./questionsBank.js");
+var initQuestionsBank = require("./initQuestionsBank.js");
 
 app.engine(".html", ejs.__express);
 app.set("view engine", "html");
@@ -18,13 +20,15 @@ app.get("/", function(req, res) {
 });
 
 app.post("/result", function(req, res) {
-    console.log(req.body);
+    var questionsBank = new QuestionsBank(req.body);
+    initQuestionsBank(questionsBank);
+    var resultScore = questionsBank.getSumScore(req.body);
 
     res.send(
         {
             status : 1,
             data : {
-                score : 100
+                score : resultScore
             },
             message : ""
         }

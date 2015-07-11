@@ -1,10 +1,10 @@
-var ASCLL_57 = 57;
-var ASCLL_48 = 48;
 var ASCLL_8 = 8;
-var ASCLL_46= 46;
 var ASCLL_9 = 9;
 var ASCLL_37 = 37;
 var ASCLL_39 = 39;
+var ASCLL_46 = 46;
+var ASCLL_48 = 48;
+var ASCLL_57 = 57;
 
 $("#commit").on("click", function(evt) {
     window.scroll(0, 0);
