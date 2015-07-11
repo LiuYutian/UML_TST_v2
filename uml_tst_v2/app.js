@@ -17,6 +17,20 @@ app.get("/", function(req, res) {
     res.render("index", {});
 });
 
+app.post("/result", function(req, res) {
+    console.log(req.body);
+
+    res.send(
+        {
+            status : 1,
+            data : {
+                score : 100
+            },
+            message : ""
+        }
+    );
+});
+
 var server = app.listen(3000, function() {
     var host = server.address().address;
     var port = server.address().port;

@@ -7,10 +7,11 @@
     <title>UML TST</title>
     <link rel="stylesheet" href="./static/stylesheets/bootstrap.css">
     <link rel="stylesheet" href="./static/stylesheets/index.css">
+    <script src="./static/javascripts/jquery.js"></script>
 </head>
 <body>
     <div class="container">
-        <form>
+        <form id="formData">
             <h4>西安软件服务外包大学</h4>
             <hr>
             <div class="text-center"><h1>统一建模语言理论测试</h1></div>
@@ -24,18 +25,18 @@
                             <input class="info"  type="text" readonly value="100分钟">
                         </div>
                         <div class="col-md-4 text-center">得分：
-                            <input class="info" type="text" readonly value=" ">
+                            <input class="info" type="text" id="score" readonly>
                         </div>
                     </div>
                     <div class="row titleMargin">
                         <div class="col-md-4 text-center">班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;级：
-                            <input class="info" type="text" placeholder="请输入班级">
+                            <input class="info munst" type="text" name="class" placeholder="请输入班级">
                         </div>
                         <div class="col-md-4 text-center">学号：
-                            <input class="info" type="text"  placeholder="请输入学号">
+                            <input class="info munst" type="text" name="studentNumber" id="studnetNumber"  placeholder="请输入学号">
                         </div>
                         <div class="col-md-4 text-center">姓名：
-                            <input class="info" id="name" type="text" placeholder="请输入姓名">
+                            <input class="info munst" id="name" type="text" name="name" placeholder="请输入姓名">
                         </div>
                     </div>
                 </div>
@@ -46,11 +47,11 @@
                 </div>
                 <div class="panel-body">
                     <span>1、UML&nbsp;的中文全称是：</span>
-                    <input class="info" type="text">。<br>
+                    <input class="info" type="text" name="gapfill-no1">。<br>
                     <span>2、对象最突出的特征是：</span>
-                    <input class="info titleMargin" type="text">&nbsp;、
-                    <input class="info" type="text">&nbsp;、
-                    <input class="info" type="text">。
+                    <input class="info titleMargin" type="text" name="gapfill-no2">&nbsp;、
+                    <input class="info" type="text" name="gapfill-no2">&nbsp;、
+                    <input class="info" type="text" name="gapfill-no2">。
                 </div>
             </div>
             <div class="panel panel-info">
@@ -109,16 +110,16 @@
                 </div>
                 <div class="panel-body">
                     <span >1、用例图只是用于和客户交流和沟通的，用于确定需求。</span>
-                    <span>【<input type="radio" name="judge1" value="√" id="judge1v">
-                        <label for="judge1v">&nbsp; √ &nbsp;</label>
-                        <input type="radio" name="judge1" value="×" id="judge1x">
-                        <label for="judge1x">&nbsp; × &nbsp;</label>】
+                    <span>【<input type="radio" name="judge-no1" value="√" id="judge-no1-exactness">
+                        <label for="judge-no1-exactness">&nbsp; √ &nbsp;</label>
+                        <input type="radio" name="judge-no1" value="×" id="judge-no1-error">
+                        <label for="judge-no1-error">&nbsp; × &nbsp;</label>】
                     </span><br>
                     <span >2、在状态图中，终止状态在一个状态图中允许有任意多个。</span>
-                    <span>【<input type="radio" name="judge2" value="√" id="judge2v">
-                        <label for="judge2v">&nbsp; √ &nbsp;</label>
-                        <input type="radio" name="judge2" value="×" id="judge2x">
-                        <label for="judge2x">&nbsp; × &nbsp;</label>】
+                    <span>【<input type="radio" name="judge-no2" value="√" id="judge-no2-exactness">
+                        <label for="judge-no2-exactness">&nbsp; √ &nbsp;</label>
+                        <input type="radio" name="judge-no2" value="×" id="judge-no2-error">
+                        <label for="judge-no2-error">&nbsp; × &nbsp;</label>】
                     </span><br>
                 </div>
             </div>
@@ -129,11 +130,12 @@
                 <div class="panel-body">
                     <span >1、简述什么是模型以及模型的表现形式？</span><br>
                     <span ><textarea name="shortAanswer" cols="40" rows="5" id="shortAanswer"></textarea></span><br>
-                    <span class="col-md-6 text-center top"><input type="button" value="提交"></span>
-                    <span class="col-md-6 text-center top"><input type="reset" value="重置"></span>
+                    <span class="col-md-6 text-center"><input id="commit" type="button" value="提交"></span>
+                    <span class="col-md-6 text-center"><input id="reset" type="reset" value="重置"></span>
                 </div>
             </div>
         </form>
     </div>
 </body>
+<script src="./static/javascripts/index.js"></script>
 </html>
