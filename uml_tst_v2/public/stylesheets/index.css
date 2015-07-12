@@ -28,3 +28,7 @@ h4 {
 #shortAanswer {
     resize:none;
 }
+
+.label-font {
+    font-weight: initial;
+}
